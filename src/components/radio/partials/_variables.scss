@@ -1,0 +1,28 @@
+//root variables
+:root {
+  //Radio colors:
+  --radio-text-color: var(--gray-700);
+  --radio-text-disabled: var(--gray-400);
+  --radio-text-readonly: var(--gray-400);
+  --radio-text-hover: var(--gray-1000);
+  --radio-text-active: var(--primary-color);
+
+  --radio-background-color: var(--gray-100);
+  --radio-background-color-inverse: var(--gray-0);
+  --radio-background-color-disabled: var(--gray-100);
+  --radio-background-color-readonly: var(--gray-50);
+  --radio-background-color-hover: var(--gray-200);
+  --radio-background-color-checked: var(--primary-color);
+
+  --radio-border-color: var(--gray-200);
+  --radio-border-color-readonly: var(--gray-100);
+  --radio-border-color-hover: var(--gray-400);
+}
+
+//Sizes:
+$radio-width: 16px;
+$radio-height: 16px;
+$radio-border-radius: 50%;
+
+//Font:
+$radio-font-family: 'Rubik', sans-serif;

@@ -1,0 +1,227 @@
+<head>
+    <title>Textarea</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+<main>
+    <div class="au-container-grid my-16">
+        <h2>Textarea</h2>
+        <div class="au-container-grid au-container-grid-inside col-fr-6 gap-xxs-4 gap-lg-6">
+            <div>
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "",
+                        required: false,
+                        disabled: false,
+                        readonly: false,
+                        info: false,
+                        label: "Текстовое поле",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "is-disabled",
+                        required: false,
+                        disabled: true,
+                        readonly: false,
+                        info: false,
+                        label: "Текстовое поле (disabled)",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "is-readonly",
+                        required: false,
+                        disabled: false,
+                        readonly: true,
+                        info: false,
+                        label: "Текстовое поле (readonly)",
+                        placeholder: "Введите значение",
+                        value: "Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом.",
+                        message: "",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "is-success",
+                        required: false,
+                        disabled: false,
+                        readonly: false,
+                        info: false,
+                        label: "Текстовое поле (success)",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "Текст с успехом",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "is-warning",
+                        required: false,
+                        disabled: false,
+                        readonly: false,
+                        info: false,
+                        label: "Текстовое поле (warning)",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "Текст с предупреждением",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "is-error",
+                        required: false,
+                        disabled: false,
+                        readonly: false,
+                        info: false,
+                        label: "Текстовое поле (error)",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "Текст с ошибкой",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "is-info",
+                        required: false,
+                        disabled: false,
+                        readonly: false,
+                        info: true,
+                        label: "Текстовое поле (описание с подсказкой)",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "Описание с подсказкой",
+                    }
+                })
+            </div>
+            <div>
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "textarea-inverse ",
+                        required: false,
+                        disabled: false,
+                        readonly: false,
+                        info: false,
+                        label: "Текстовое поле",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "textarea-inverse is-disabled",
+                        required: false,
+                        disabled: true,
+                        readonly: false,
+                        info: false,
+                        label: "Текстовое поле (disabled)",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "textarea-inverse is-readonly",
+                        required: false,
+                        disabled: false,
+                        readonly: true,
+                        info: false,
+                        label: "Текстовое поле (readonly)",
+                        placeholder: "Введите значение",
+                        value: "Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом.",
+                        message: "",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "textarea-inverse is-success",
+                        required: false,
+                        disabled: false,
+                        readonly: false,
+                        info: false,
+                        label: "Текстовое поле (success)",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "Текст с успехом",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "textarea-inverse is-warning",
+                        required: false,
+                        disabled: false,
+                        readonly: false,
+                        info: false,
+                        label: "Текстовое поле (warning)",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "Текст с предупреждением",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "textarea-inverse is-error",
+                        required: false,
+                        disabled: false,
+                        readonly: false,
+                        info: false,
+                        label: "Текстовое поле (error)",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "Текст с ошибкой",
+                    }
+                })
+
+                @@include("./template/_template.html", {
+                    context: {
+                        classesList: "textarea-inverse is-info",
+                        required: false,
+                        disabled: false,
+                        readonly: false,
+                        info: true,
+                        label: "Текстовое поле (описание с подсказкой)",
+                        placeholder: "Введите значение",
+                        value: "",
+                        message: "Описание с подсказкой",
+                    }
+                })
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./index.js"></script>
+</body>

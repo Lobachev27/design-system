@@ -1,0 +1,38 @@
+//root variables
+:root {
+  //Switch colors:
+  --switch-text-color: var(--gray-700);
+  --switch-text-disabled: var(--gray-400);
+  --switch-text-hover: var(--gray-1000);
+  --switch-text-active: var(--primary-color);
+
+  --switch-background-color: var(--gray-100);
+  --switch-background-color-disabled: var(--gray-100);
+  --switch-background-color-readonly: var(--gray-0);
+  --switch-background-color-hover: var(--gray-300);
+  --switch-background-color-checked: var(--primary-color);
+
+  --switch-circle-color: var(--gray-0);
+  --switch-circle-color-disabled: var(--gray-300);
+  --switch-circle-color-readonly: var(--gray-100);
+
+  --switch-border-color: var(--gray-200);
+  --switch-border-color-disabled: var(--gray-100);
+  --switch-border-color-readonly: var(--gray-100);
+  --switch-border-color-hover: var(--gray-300);
+  --switch-border-color-checked: var(--primary-color);
+
+  --switch-border-bottom-color: var(--gray-100);
+}
+
+//Sizes:
+$switch-width: 34px;
+$switch-height: 18px;
+$switch-border-radius: 16px;
+
+$switch-circle-width: 16px;
+$switch-circle-height: 16px;
+$switch-circle-border-radius: 50%;
+
+//Font:
+$switch-font-family: 'Rubik', sans-serif;

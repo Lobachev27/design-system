@@ -1,0 +1,33 @@
+//root variables
+:root {
+  //Input colors:
+  --file-text-color: var(--gray-1000);
+  --file-text-disabled: var(--gray-400);
+
+  --file-background-color: var(--gray-50);
+  --file-background-color-inverse: var(--gray-0);
+  --file-background-color-disabled: var(--gray-100);
+  --file-background-color-readonly: var(--gray-50);
+  --file-background-color-hover: var(--gray-50);
+  --file-background-color-focus: var(--gray-0);
+
+  --file-border-color: var(--gray-200);
+  --file-border-color-light: var(--gray-100);
+  --file-border-color-disabled: var(--gray-200);
+  --file-border-color-hover: var(--gray-400);
+  --file-border-color-focus: var(--primary-color);
+
+  --icon-color-action: var(--thirty-color);
+  --icon-color-focus: var(--primary-color);
+  --icon-color-disabled: var(--gray-300);
+  --icon-color-default: var(--gray-200);
+  --icon-color-dark: var(--gray-900);
+}
+
+//Sizes:
+$file-height-default: 124px;
+$file-item-height-default: 40px;
+$file-border-radius: 4px;
+
+//Font:
+$file-font-family: 'Rubik', sans-serif;

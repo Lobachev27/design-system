@@ -1,0 +1,13 @@
+<@@context.tag
+  class="button @@context.classesList"
+  @@if(context.tag === "a"){href="@@context.href"}
+  @@if(context.tag === "button"){type="@@context.type"}
+  @@if(context.disabled){disabled}
+>
+  @@if(context.icon){
+  <i class="button-icon">@@context.icon</i>
+  }
+  @@if(context.text){
+  <span class="button-text">@@context.text</span>
+  }
+</@@context.tag>

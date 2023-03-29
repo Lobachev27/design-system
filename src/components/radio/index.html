@@ -1,0 +1,338 @@
+<head>
+  <title>Radio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="title" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+<main>
+  <div class="au-container-grid my-16">
+    <h2>Radio</h2>
+    <div class="au-container-grid au-container-grid-inside col-fr-6 gap-xxs-4 gap-lg-6">
+      <div>
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "",
+            required: false,
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "",
+            radioName: "radio-1",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-disabled",
+            required: false,
+            disabled: true,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "",
+            radioName: "radio-2",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-readonly",
+            required: false,
+            disabled: false,
+            readonly: true,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "",
+            radioName: "radio-3",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "checked", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-success",
+            required: false,
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "Текст с успехом",
+            radioName: "radio-4",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-warning",
+            required: false,
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "Текст с предупреждением",
+            radioName: "radio-5",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-error",
+            required: false,
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "Текст с ошибкой",
+            radioName: "radio-6",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-info is-info-item is-error",
+            required: false,
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "Я текст с подсказкой",
+            message: "Текст с ошибкой",
+            radioName: "radio-7",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "Я текст с подсказкой",},
+              {"text": "Item 2", "checked": "", "message": "Я текст с подсказкой",},
+              {"text": "Item 3", "checked": "", "message": "Я текст с подсказкой",},
+              {"text": "Item 4", "checked": "", "message": "Я текст с подсказкой",},
+              {"text": "Item 5", "checked": "", "message": "Я текст с подсказкой",},
+              {"text": "Item 6", "checked": "", "message": "Я текст с подсказкой",},
+            ],
+          }
+        })
+      </div>
+      <div>
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "radio-inverse",
+            required: false,
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "",
+            radioName: "radio-8",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "radio-inverse is-disabled",
+            required: false,
+            disabled: true,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "",
+            radioName: "radio-9",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "radio-inverse is-readonly",
+            required: false,
+            disabled: false,
+            readonly: true,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "",
+            radioName: "radio-10",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "checked", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "radio-inverse is-success",
+            required: false,
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "Текст с успехом",
+            radioName: "radio-11",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "radio-inverse is-warning",
+            required: false,
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "Текст с предупреждением",
+            radioName: "radio-12",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "radio-inverse is-error",
+            required: false,
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "",
+            message: "Текст с ошибкой",
+            radioName: "radio-13",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "",},
+              {"text": "Item 2", "checked": "", "message": "",},
+              {"text": "Item 3", "checked": "", "message": "",},
+              {"text": "Item 4", "checked": "", "message": "",},
+              {"text": "Item 5", "checked": "", "message": "",},
+              {"text": "Item 6", "checked": "", "message": "",},
+            ],
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "radio-inverse is-info is-info-item is-error",
+            required: false,
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Название поля",
+            messageUp: "Я текст с подсказкой",
+            message: "Текст с ошибкой",
+            radioName: "radio-14",
+            arr: [
+              {"text": "Item 1", "checked": "", "message": "Я текст с подсказкой",},
+              {"text": "Item 2", "checked": "", "message": "Я текст с подсказкой",},
+              {"text": "Item 3", "checked": "", "message": "Я текст с подсказкой",},
+              {"text": "Item 4", "checked": "", "message": "Я текст с подсказкой",},
+              {"text": "Item 5", "checked": "", "message": "Я текст с подсказкой",},
+              {"text": "Item 6", "checked": "", "message": "Я текст с подсказкой",},
+            ],
+          }
+        })
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./index.js"></script>
+</body>

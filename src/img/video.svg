@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Glyphs/Files/24px/Video</title>
+    <defs>
+        <linearGradient x1="48.0477547%" y1="64.6386472%" x2="48.0477547%" y2="160.446942%" id="linearGradient-1">
+            <stop stop-color="#DBE9F2" offset="0%"></stop>
+            <stop stop-color="#91BBD8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Icons/Glyphs/Files/24px/Video" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,3 C16.9705627,3 21,7.02943725 21,12 C21,16.9705627 16.9705627,21 12,21 C7.02943725,21 3,16.9705627 3,12 C3,7.02943725 7.02943725,3 12,3 Z" id="Rectangle" fill="url(#linearGradient-1)"></path>
+        <path d="M13.4472136,8.89442719 L16.6381966,15.2763932 C16.7616912,15.5233825 16.6615791,15.823719 16.4145898,15.9472136 C16.3451621,15.9819275 16.2686056,16 16.190983,16 L9.80901699,16 C9.53287462,16 9.30901699,15.7761424 9.30901699,15.5 C9.30901699,15.4223775 9.32708954,15.3458209 9.3618034,15.2763932 L12.5527864,8.89442719 C12.676281,8.64743794 12.9766175,8.54732577 13.2236068,8.67082039 C13.3203705,8.71920224 13.3988317,8.79766349 13.4472136,8.89442719 Z" id="Triangle" fill="#3F6ADA" transform="translate(13.000000, 12.000000) rotate(90.000000) translate(-13.000000, -12.000000) "></path>
+    </g>
+</svg>

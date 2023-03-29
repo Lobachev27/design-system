@@ -1,0 +1,33 @@
+//root variables
+:root {
+  //Textarea colors:
+  --textarea-text-color: var(--gray-1000);
+  --textarea-text-disabled: var(--gray-400);
+
+  --textarea-placeholder-color: var(--gray-300);
+
+  --textarea-background-color: var(--gray-50);
+  --textarea-background-color-inverse: var(--gray-0);
+  --textarea-background-color-disabled: var(--gray-100);
+  --textarea-background-color-readonly: var(--gray-50);
+  --textarea-background-color-hover: var(--gray-50);
+  --textarea-background-color-focus: var(--gray-0);
+
+  --textarea-border-color: var(--gray-100);
+  --textarea-border-color-disabled: var(--gray-200);
+  --textarea-border-color-hover: var(--gray-400);
+  --textarea-border-color-focus: var(--primary-color);
+
+  --icon-color-action: var(--thirty-color);
+  --icon-color-focus: var(--primary-color);
+  --icon-color-disabled: var(--gray-300);
+  --icon-color-default: var(--gray-200);
+  --icon-color-dark: var(--gray-900);
+}
+
+//Sizes:
+$textarea-height-default: 96px;
+$textarea-border-radius: 4px;
+
+//Font:
+$textarea-font-family: 'Rubik', sans-serif;

@@ -1,0 +1,91 @@
+@import "../../scss/partials/variables";
+@import "partials/variables";
+@import "../inputs/index";
+
+.input-wrapper {
+  &.input-datepicker {
+    & .input-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & span {
+        display: inline-flex;
+        font-weight: 700;
+        width: 12px;
+        margin: 0 4px;
+      }
+    }
+
+    & .input-box {
+      padding: 0 64px 0 12px;
+    }
+
+    & .icon-delete {
+      right: 40px;
+    }
+
+    & .icon-right {
+      display: flex;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+
+      & svg {
+        fill: var(--icon-color-action);
+        transition: fill $transition-time;
+      }
+    }
+
+    &.is-focused {
+      & .input-box.is-focused {
+        & .icon-right {
+          & svg {
+            fill: var(--icon-color-focus);
+            transition: fill $transition-time;
+          }
+        }
+      }
+    }
+
+    &.is-disabled {
+      & .icon-right {
+        pointer-events: none;
+        cursor: default;
+
+        & svg {
+          fill: var(--icon-color-disabled);
+          cursor: default;
+
+          &:hover {
+            fill: var(--icon-color-disabled);
+          }
+        }
+      }
+    }
+
+    &.is-readonly {
+      & .icon-delete {
+        display: none;
+      }
+
+      & .icon-readonly {
+        right: 40px;
+      }
+
+      & .icon-right {
+        pointer-events: none;
+        cursor: default;
+
+        & svg {
+          fill: var(--icon-color-disabled);
+          cursor: default;
+
+          &:hover {
+            fill: var(--icon-color-disabled);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,959 @@
+<head>
+  <title>Radio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+  <link
+    rel="stylesheet"
+    href="https://necolas.github.io/normalize.css/latest/normalize.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Ruda:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../../../css/style.css" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <main>
+    <div class="au-container-grid my-16">
+      <h2>Radio</h2>
+      <div
+        class="au-container-grid au-container-grid-inside col-fr-6 gap-xxs-4 gap-lg-6"
+      >
+        <div>
+          <div class="radio-wrapper">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-1" />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-1" />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-1" />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-1" />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-1" />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-1" />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text"></span>
+          </div>
+
+          <div class="radio-wrapper is-disabled">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-2"
+                    disabled
+                  />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-2"
+                    disabled
+                  />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-2"
+                    disabled
+                  />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-2"
+                    disabled
+                  />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-2"
+                    disabled
+                  />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-2"
+                    disabled
+                  />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text"></span>
+          </div>
+
+          <div class="radio-wrapper is-readonly">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-3"
+                    onclick="return false;"
+                  />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-3"
+                    onclick="return false;"
+                  />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-3"
+                    onclick="return false;"
+                  />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-3"
+                    onclick="return false;"
+                  />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-3"
+                    onclick="return false;"
+                  />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-3"
+                    onclick="return false;"
+                    checked
+                  />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text"></span>
+          </div>
+
+          <div class="radio-wrapper is-success">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-4" />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-4" />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-4" />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-4" />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-4" />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-4" />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text">Текст с успехом</span>
+          </div>
+
+          <div class="radio-wrapper is-warning">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-5" />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-5" />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-5" />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-5" />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-5" />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-5" />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text">Текст с предупреждением</span>
+          </div>
+
+          <div class="radio-wrapper is-error">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-6" />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-6" />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-6" />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-6" />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-6" />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-6" />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text">Текст с ошибкой</span>
+          </div>
+
+          <div class="radio-wrapper is-info is-info-item is-error">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up">Я текст с подсказкой</span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-7" />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-7" />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-7" />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-7" />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-7" />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-7" />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+            </ul>
+            <span class="message-text">Текст с ошибкой</span>
+          </div>
+        </div>
+        <div>
+          <div class="radio-wrapper radio-inverse">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-8" />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-8" />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-8" />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-8" />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-8" />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-8" />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text"></span>
+          </div>
+
+          <div class="radio-wrapper radio-inverse is-disabled">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-9"
+                    disabled
+                  />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-9"
+                    disabled
+                  />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-9"
+                    disabled
+                  />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-9"
+                    disabled
+                  />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-9"
+                    disabled
+                  />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-9"
+                    disabled
+                  />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text"></span>
+          </div>
+
+          <div class="radio-wrapper radio-inverse is-readonly">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-10"
+                    onclick="return false;"
+                  />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-10"
+                    onclick="return false;"
+                  />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-10"
+                    onclick="return false;"
+                  />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-10"
+                    onclick="return false;"
+                  />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-10"
+                    onclick="return false;"
+                  />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input
+                    class="radio-input"
+                    type="radio"
+                    name="radio-10"
+                    onclick="return false;"
+                    checked
+                  />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text"></span>
+          </div>
+
+          <div class="radio-wrapper radio-inverse is-success">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-11" />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-11" />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-11" />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-11" />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-11" />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-11" />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text">Текст с успехом</span>
+          </div>
+
+          <div class="radio-wrapper radio-inverse is-warning">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-12" />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-12" />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-12" />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-12" />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-12" />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-12" />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text">Текст с предупреждением</span>
+          </div>
+
+          <div class="radio-wrapper radio-inverse is-error">
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up"></span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-13" />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-13" />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-13" />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-13" />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-13" />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-13" />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text"></span>
+              </li>
+            </ul>
+            <span class="message-text">Текст с ошибкой</span>
+          </div>
+
+          <div
+            class="radio-wrapper radio-inverse is-info is-info-item is-error"
+          >
+            <label class="label-text">Название поля</label>
+            <span class="message-text-up">Я текст с подсказкой</span>
+            <ul
+              class="au-container-grid au-container-grid-inside col-fr-4 gap-xxs-4 gap-lg-6 py-2"
+            >
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-14" />
+                  <div class="radio-text">Item 1</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-14" />
+                  <div class="radio-text">Item 2</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-14" />
+                  <div class="radio-text">Item 3</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-14" />
+                  <div class="radio-text">Item 4</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-14" />
+                  <div class="radio-text">Item 5</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+
+              <li class="radio-item">
+                <label class="radio">
+                  <input class="radio-input" type="radio" name="radio-14" />
+                  <div class="radio-text">Item 6</div>
+                </label>
+                <span class="message-item-text">Я текст с подсказкой</span>
+              </li>
+            </ul>
+            <span class="message-text">Текст с ошибкой</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./index.js"></script>
+</body>

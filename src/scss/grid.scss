@@ -1,0 +1,1261 @@
+@import "partials/variables";
+
+.au-container-flex {
+  max-width: 1280px;
+}
+
+.au-container-flex,
+.au-container-flex-fluid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  padding: 0 var(--current);
+  margin: 0 auto;
+  @media screen and ($xs-min) {
+    padding: 0 calc(var(--current) * 2);
+  }
+  @media screen and ($sm-min) {
+    padding: 0 calc(var(--current) * 3);
+  }
+  @media screen and ($lg-min) {
+    padding: 0 calc(var(--current) * 2.5);
+  }
+  /*@media screen and ($xl-min) {
+    padding: 0 calc(var(--current) * 6.5);
+  }*/
+
+  &.au-container-flex-inside {
+    width: calc(100% + calc(var(--current) * 2));
+    max-width: calc(100% + calc(var(--current) * 2));
+    padding: 0;
+    margin: calc(var(--current) * -1);
+    @media screen and ($lg-min) {
+      width: calc(100% + calc(var(--current) * 3));
+      max-width: calc(100% + calc(var(--current) * 3));
+      padding: 0;
+      margin: calc(var(--current) * -1.5);
+    }
+  }
+
+  & .col {
+    flex-grow: 1;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin: var(--current);
+    @media screen and ($lg-min) {
+      margin: calc(var(--current) * 1.5);
+    }
+
+    &-1 {
+      width: calc(8.333% - calc(var(--current) * 2));
+      max-width: calc(8.333% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width: calc(8.333% - calc(var(--current) * 3));
+        max-width: calc(8.333% - calc(var(--current) * 3));
+      }
+    }
+    &-2 {
+      width: calc(16.667% - calc(var(--current) * 2));
+      max-width: calc(16.667% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width: calc(16.666% - calc(var(--current) * 3));
+        max-width: calc(16.666% - calc(var(--current) * 3));
+      }
+    }
+    &-3 {
+      width: calc(25% - calc(var(--current) * 2));
+      max-width: calc(25% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width: calc(25% - calc(var(--current) * 3));
+        max-width: calc(25% - calc(var(--current) * 3));
+      }
+    }
+    &-4 {
+      width: calc(33.333% - calc(var(--current) * 2));
+      max-width: calc(33.333% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width: calc(33.333% - calc(var(--current) * 3));
+        max-width: calc(33.333% - calc(var(--current) * 3));
+      }
+    }
+    &-5 {
+      width: calc(41.667% - calc(var(--current) * 2));
+      max-width: calc(41.667% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width: calc(41.666% - calc(var(--current) * 3));
+        max-width: calc(41.666% - calc(var(--current) * 3));
+      }
+    }
+    &-6 {
+      width: calc(50% - calc(var(--current) * 2));
+      max-width: calc(50% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width: calc(50% - calc(var(--current) * 3));
+        max-width: calc(50% - calc(var(--current) * 3));
+      }
+    }
+    &-7 {
+      width: calc(58.333% - calc(var(--current) * 2));
+      max-width: calc(58.333% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width: calc(58.333% - calc(var(--current) * 3));
+        max-width: calc(58.333% - calc(var(--current) * 3));
+      }
+    }
+    &-8 {
+      width: calc(66.667% - calc(var(--current) * 2));
+      max-width: calc(66.667% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width: calc(66.666% - calc(var(--current) * 3));
+        max-width: calc(66.666% - calc(var(--current) * 3));
+      }
+    }
+    &-9 {
+      width: calc(75% - calc(var(--current) * 2));
+      max-width: calc(75% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width: calc(75% - calc(var(--current) * 3));
+        max-width: calc(75% - calc(var(--current) * 3));
+      }
+    }
+    &-10 {
+      width:  calc(83.333% - calc(var(--current) * 2));
+      max-width:  calc(83.333% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width:  calc(83.333% - calc(var(--current) * 3));
+        max-width:  calc(83.333% - calc(var(--current) * 3));
+      }
+    }
+    &-11 {
+      width: calc(91.667% - calc(var(--current) * 2));
+      max-width: calc(91.667% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width: calc(91.666% - calc(var(--current) * 3));
+        max-width: calc(91.666% - calc(var(--current) * 3));
+      }
+    }
+    &-12 {
+      width: calc(100% - calc(var(--current) * 2));
+      max-width: calc(100% - calc(var(--current) * 2));
+      @media screen and ($lg-min) {
+        width: calc(100% - calc(var(--current) * 3));
+        max-width: calc(100% - calc(var(--current) * 3));
+      }
+    }
+
+    &.col-xxs {
+      &-1 {
+        width: calc(8.333% - calc(var(--current) * 2));
+        max-width: calc(8.333% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width: calc(8.333% - calc(var(--current) * 3));
+          max-width: calc(8.333% - calc(var(--current) * 3));
+        }
+      }
+      &-2 {
+        width: calc(16.667% - calc(var(--current) * 2));
+        max-width: calc(16.667% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width: calc(16.666% - calc(var(--current) * 3));
+          max-width: calc(16.666% - calc(var(--current) * 3));
+        }
+      }
+      &-3 {
+        width: calc(25% - calc(var(--current) * 2));
+        max-width: calc(25% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width: calc(25% - calc(var(--current) * 3));
+          max-width: calc(25% - calc(var(--current) * 3));
+        }
+      }
+      &-4 {
+        width: calc(33.333% - calc(var(--current) * 2));
+        max-width: calc(33.333% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width: calc(33.333% - calc(var(--current) * 3));
+          max-width: calc(33.333% - calc(var(--current) * 3));
+        }
+      }
+      &-5 {
+        width: calc(41.667% - calc(var(--current) * 2));
+        max-width: calc(41.667% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width: calc(41.666% - calc(var(--current) * 3));
+          max-width: calc(41.666% - calc(var(--current) * 3));
+        }
+      }
+      &-6 {
+        width: calc(50% - calc(var(--current) * 2));
+        max-width: calc(50% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width: calc(50% - calc(var(--current) * 3));
+          max-width: calc(50% - calc(var(--current) * 3));
+        }
+      }
+      &-7 {
+        width: calc(58.333% - calc(var(--current) * 2));
+        max-width: calc(58.333% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width: calc(58.333% - calc(var(--current) * 3));
+          max-width: calc(58.333% - calc(var(--current) * 3));
+        }
+      }
+      &-8 {
+        width: calc(66.667% - calc(var(--current) * 2));
+        max-width: calc(66.667% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width: calc(66.666% - calc(var(--current) * 3));
+          max-width: calc(66.666% - calc(var(--current) * 3));
+        }
+      }
+      &-9 {
+        width: calc(75% - calc(var(--current) * 2));
+        max-width: calc(75% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width: calc(75% - calc(var(--current) * 3));
+          max-width: calc(75% - calc(var(--current) * 3));
+        }
+      }
+      &-10 {
+        width:  calc(83.333% - calc(var(--current) * 2));
+        max-width:  calc(83.333% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width:  calc(83.333% - calc(var(--current) * 3));
+          max-width:  calc(83.333% - calc(var(--current) * 3));
+        }
+      }
+      &-11 {
+        width: calc(91.667% - calc(var(--current) * 2));
+        max-width: calc(91.667% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width: calc(91.666% - calc(var(--current) * 3));
+          max-width: calc(91.666% - calc(var(--current) * 3));
+        }
+      }
+      &-12 {
+        width: calc(100% - calc(var(--current) * 2));
+        max-width: calc(100% - calc(var(--current) * 2));
+        @media screen and ($lg-min) {
+          width: calc(100% - calc(var(--current) * 3));
+          max-width: calc(100% - calc(var(--current) * 3));
+        }
+      }
+    }
+
+    &.col-xs {
+      &-1 {
+        @media screen and ($xs-min) {
+          width: calc(8.333% - calc(var(--current) * 2));
+          max-width: calc(8.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(8.333% - calc(var(--current) * 3));
+          max-width: calc(8.333% - calc(var(--current) * 3));
+        }
+      }
+      &-2 {
+        @media screen and ($xs-min) {
+          width: calc(16.667% - calc(var(--current) * 2));
+          max-width: calc(16.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(16.666% - calc(var(--current) * 3));
+          max-width: calc(16.666% - calc(var(--current) * 3));
+        }
+      }
+      &-3 {
+        @media screen and ($xs-min) {
+          width: calc(25% - calc(var(--current) * 2));
+          max-width: calc(25% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(25% - calc(var(--current) * 3));
+          max-width: calc(25% - calc(var(--current) * 3));
+        }
+      }
+      &-4 {
+        @media screen and ($xs-min) {
+          width: calc(33.333% - calc(var(--current) * 2));
+          max-width: calc(33.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(33.333% - calc(var(--current) * 3));
+          max-width: calc(33.333% - calc(var(--current) * 3));
+        }
+      }
+      &-5 {
+        @media screen and ($xs-min) {
+          width: calc(41.667% - calc(var(--current) * 2));
+          max-width: calc(41.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(41.666% - calc(var(--current) * 3));
+          max-width: calc(41.666% - calc(var(--current) * 3));
+        }
+      }
+      &-6 {
+        @media screen and ($xs-min) {
+          width: calc(50% - calc(var(--current) * 2));
+          max-width: calc(50% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(50% - calc(var(--current) * 3));
+          max-width: calc(50% - calc(var(--current) * 3));
+        }
+      }
+      &-7 {
+        @media screen and ($xs-min) {
+          width: calc(58.333% - calc(var(--current) * 2));
+          max-width: calc(58.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(58.333% - calc(var(--current) * 3));
+          max-width: calc(58.333% - calc(var(--current) * 3));
+        }
+      }
+      &-8 {
+        @media screen and ($xs-min) {
+          width: calc(66.667% - calc(var(--current) * 2));
+          max-width: calc(66.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(66.666% - calc(var(--current) * 3));
+          max-width: calc(66.666% - calc(var(--current) * 3));
+        }
+      }
+      &-9 {
+        @media screen and ($xs-min) {
+          width: calc(75% - calc(var(--current) * 2));
+          max-width: calc(75% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(75% - calc(var(--current) * 3));
+          max-width: calc(75% - calc(var(--current) * 3));
+        }
+      }
+      &-10 {
+        @media screen and ($xs-min) {
+          width:  calc(83.333% - calc(var(--current) * 2));
+          max-width:  calc(83.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width:  calc(83.333% - calc(var(--current) * 3));
+          max-width:  calc(83.333% - calc(var(--current) * 3));
+        }
+      }
+      &-11 {
+        @media screen and ($xs-min) {
+          width: calc(91.667% - calc(var(--current) * 2));
+          max-width: calc(91.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(91.666% - calc(var(--current) * 3));
+          max-width: calc(91.666% - calc(var(--current) * 3));
+        }
+      }
+      &-12 {
+        @media screen and ($xs-min) {
+          width: calc(100% - calc(var(--current) * 2));
+          max-width: calc(100% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(100% - calc(var(--current) * 3));
+          max-width: calc(100% - calc(var(--current) * 3));
+        }
+      }
+    }
+
+    &.col-sm {
+      &-1 {
+        @media screen and ($sm-min) {
+          width: calc(8.333% - calc(var(--current) * 2));
+          max-width: calc(8.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(8.333% - calc(var(--current) * 3));
+          max-width: calc(8.333% - calc(var(--current) * 3));
+        }
+      }
+      &-2 {
+        @media screen and ($sm-min) {
+          width: calc(16.667% - calc(var(--current) * 2));
+          max-width: calc(16.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(16.666% - calc(var(--current) * 3));
+          max-width: calc(16.666% - calc(var(--current) * 3));
+        }
+      }
+      &-3 {
+        @media screen and ($sm-min) {
+          width: calc(25% - calc(var(--current) * 2));
+          max-width: calc(25% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(25% - calc(var(--current) * 3));
+          max-width: calc(25% - calc(var(--current) * 3));
+        }
+      }
+      &-4 {
+        @media screen and ($sm-min) {
+          width: calc(33.333% - calc(var(--current) * 2));
+          max-width: calc(33.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(33.333% - calc(var(--current) * 3));
+          max-width: calc(33.333% - calc(var(--current) * 3));
+        }
+      }
+      &-5 {
+        @media screen and ($sm-min) {
+          width: calc(41.667% - calc(var(--current) * 2));
+          max-width: calc(41.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(41.666% - calc(var(--current) * 3));
+          max-width: calc(41.666% - calc(var(--current) * 3));
+        }
+      }
+      &-6 {
+        @media screen and ($sm-min) {
+          width: calc(50% - calc(var(--current) * 2));
+          max-width: calc(50% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(50% - calc(var(--current) * 3));
+          max-width: calc(50% - calc(var(--current) * 3));
+        }
+      }
+      &-7 {
+        @media screen and ($sm-min) {
+          width: calc(58.333% - calc(var(--current) * 2));
+          max-width: calc(58.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(58.333% - calc(var(--current) * 3));
+          max-width: calc(58.333% - calc(var(--current) * 3));
+        }
+      }
+      &-8 {
+        @media screen and ($sm-min) {
+          width: calc(66.667% - calc(var(--current) * 2));
+          max-width: calc(66.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(66.666% - calc(var(--current) * 3));
+          max-width: calc(66.666% - calc(var(--current) * 3));
+        }
+      }
+      &-9 {
+        @media screen and ($sm-min) {
+          width: calc(75% - calc(var(--current) * 2));
+          max-width: calc(75% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(75% - calc(var(--current) * 3));
+          max-width: calc(75% - calc(var(--current) * 3));
+        }
+      }
+      &-10 {
+        @media screen and ($sm-min) {
+          width:  calc(83.333% - calc(var(--current) * 2));
+          max-width:  calc(83.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width:  calc(83.333% - calc(var(--current) * 3));
+          max-width:  calc(83.333% - calc(var(--current) * 3));
+        }
+      }
+      &-11 {
+        @media screen and ($sm-min) {
+          width: calc(91.667% - calc(var(--current) * 2));
+          max-width: calc(91.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(91.666% - calc(var(--current) * 3));
+          max-width: calc(91.666% - calc(var(--current) * 3));
+        }
+      }
+      &-12 {
+        @media screen and ($sm-min) {
+          width: calc(100% - calc(var(--current) * 2));
+          max-width: calc(100% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(100% - calc(var(--current) * 3));
+          max-width: calc(100% - calc(var(--current) * 3));
+        }
+      }
+    }
+
+    &.col-md {
+      &-1 {
+        @media screen and ($md-min) {
+          width: calc(8.333% - calc(var(--current) * 2));
+          max-width: calc(8.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(8.333% - calc(var(--current) * 3));
+          max-width: calc(8.333% - calc(var(--current) * 3));
+        }
+      }
+      &-2 {
+        @media screen and ($md-min) {
+          width: calc(16.667% - calc(var(--current) * 2));
+          max-width: calc(16.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(16.666% - calc(var(--current) * 3));
+          max-width: calc(16.666% - calc(var(--current) * 3));
+        }
+      }
+      &-3 {
+        @media screen and ($md-min) {
+          width: calc(25% - calc(var(--current) * 2));
+          max-width: calc(25% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(25% - calc(var(--current) * 3));
+          max-width: calc(25% - calc(var(--current) * 3));
+        }
+      }
+      &-4 {
+        @media screen and ($md-min) {
+          width: calc(33.333% - calc(var(--current) * 2));
+          max-width: calc(33.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(33.333% - calc(var(--current) * 3));
+          max-width: calc(33.333% - calc(var(--current) * 3));
+        }
+      }
+      &-5 {
+        @media screen and ($md-min) {
+          width: calc(41.667% - calc(var(--current) * 2));
+          max-width: calc(41.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(41.666% - calc(var(--current) * 3));
+          max-width: calc(41.666% - calc(var(--current) * 3));
+        }
+      }
+      &-6 {
+        @media screen and ($md-min) {
+          width: calc(50% - calc(var(--current) * 2));
+          max-width: calc(50% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(50% - calc(var(--current) * 3));
+          max-width: calc(50% - calc(var(--current) * 3));
+        }
+      }
+      &-7 {
+        @media screen and ($md-min) {
+          width: calc(58.333% - calc(var(--current) * 2));
+          max-width: calc(58.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(58.333% - calc(var(--current) * 3));
+          max-width: calc(58.333% - calc(var(--current) * 3));
+        }
+      }
+      &-8 {
+        @media screen and ($md-min) {
+          width: calc(66.667% - calc(var(--current) * 2));
+          max-width: calc(66.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(66.666% - calc(var(--current) * 3));
+          max-width: calc(66.666% - calc(var(--current) * 3));
+        }
+      }
+      &-9 {
+        @media screen and ($md-min) {
+          width: calc(75% - calc(var(--current) * 2));
+          max-width: calc(75% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(75% - calc(var(--current) * 3));
+          max-width: calc(75% - calc(var(--current) * 3));
+        }
+      }
+      &-10 {
+        @media screen and ($md-min) {
+          width:  calc(83.333% - calc(var(--current) * 2));
+          max-width:  calc(83.333% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width:  calc(83.333% - calc(var(--current) * 3));
+          max-width:  calc(83.333% - calc(var(--current) * 3));
+        }
+      }
+      &-11 {
+        @media screen and ($md-min) {
+          width: calc(91.667% - calc(var(--current) * 2));
+          max-width: calc(91.667% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(91.666% - calc(var(--current) * 3));
+          max-width: calc(91.666% - calc(var(--current) * 3));
+        }
+      }
+      &-12 {
+        @media screen and ($md-min) {
+          width: calc(100% - calc(var(--current) * 2));
+          max-width: calc(100% - calc(var(--current) * 2));
+        }
+        @media screen and ($lg-min) {
+          width: calc(100% - calc(var(--current) * 3));
+          max-width: calc(100% - calc(var(--current) * 3));
+        }
+      }
+    }
+
+    &.col-lg {
+      &-1 {
+        @media screen and ($lg-min) {
+          width: calc(8.333% - calc(var(--current) * 3));
+          max-width: calc(8.333% - calc(var(--current) * 3));
+        }
+      }
+      &-2 {
+        @media screen and ($lg-min) {
+          width: calc(16.666% - calc(var(--current) * 3));
+          max-width: calc(16.666% - calc(var(--current) * 3));
+        }
+      }
+      &-3 {
+        @media screen and ($lg-min) {
+          width: calc(25% - calc(var(--current) * 3));
+          max-width: calc(25% - calc(var(--current) * 3));
+        }
+      }
+      &-4 {
+        @media screen and ($lg-min) {
+          width: calc(33.333% - calc(var(--current) * 3));
+          max-width: calc(33.333% - calc(var(--current) * 3));
+        }
+      }
+      &-5 {
+        @media screen and ($lg-min) {
+          width: calc(41.666% - calc(var(--current) * 3));
+          max-width: calc(41.666% - calc(var(--current) * 3));
+        }
+      }
+      &-6 {
+        @media screen and ($lg-min) {
+          width: calc(50% - calc(var(--current) * 3));
+          max-width: calc(50% - calc(var(--current) * 3));
+        }
+      }
+      &-7 {
+        @media screen and ($lg-min) {
+          width: calc(58.333% - calc(var(--current) * 3));
+          max-width: calc(58.333% - calc(var(--current) * 3));
+        }
+      }
+      &-8 {
+        @media screen and ($lg-min) {
+          width: calc(66.666% - calc(var(--current) * 3));
+          max-width: calc(66.666% - calc(var(--current) * 3));
+        }
+      }
+      &-9 {
+        @media screen and ($lg-min) {
+          width: calc(75% - calc(var(--current) * 3));
+          max-width: calc(75% - calc(var(--current) * 3));
+        }
+      }
+      &-10 {
+        @media screen and ($lg-min) {
+          width:  calc(83.333% - calc(var(--current) * 3));
+          max-width:  calc(83.333% - calc(var(--current) * 3));
+        }
+      }
+      &-11 {
+        @media screen and ($lg-min) {
+          width: calc(91.666% - calc(var(--current) * 3));
+          max-width: calc(91.666% - calc(var(--current) * 3));
+        }
+      }
+      &-12 {
+        @media screen and ($lg-min) {
+          width: calc(100% - calc(var(--current) * 3));
+          max-width: calc(100% - calc(var(--current) * 3));
+        }
+      }
+    }
+
+    &.col-xl {
+      &-1 {
+        @media screen and ($xl-min) {
+          width: calc(8.333% - calc(var(--current) * 3));
+          max-width: calc(8.333% - calc(var(--current) * 3));
+        }
+      }
+      &-2 {
+        @media screen and ($xl-min) {
+          width: calc(16.666% - calc(var(--current) * 3));
+          max-width: calc(16.666% - calc(var(--current) * 3));
+        }
+      }
+      &-3 {
+        @media screen and ($xl-min) {
+          width: calc(25% - calc(var(--current) * 3));
+          max-width: calc(25% - calc(var(--current) * 3));
+        }
+      }
+      &-4 {
+        @media screen and ($xl-min) {
+          width: calc(33.333% - calc(var(--current) * 3));
+          max-width: calc(33.333% - calc(var(--current) * 3));
+        }
+      }
+      &-5 {
+        @media screen and ($xl-min) {
+          width: calc(41.666% - calc(var(--current) * 3));
+          max-width: calc(41.666% - calc(var(--current) * 3));
+        }
+      }
+      &-6 {
+        @media screen and ($xl-min) {
+          width: calc(50% - calc(var(--current) * 3));
+          max-width: calc(50% - calc(var(--current) * 3));
+        }
+      }
+      &-7 {
+        @media screen and ($xl-min) {
+          width: calc(58.333% - calc(var(--current) * 3));
+          max-width: calc(58.333% - calc(var(--current) * 3));
+        }
+      }
+      &-8 {
+        @media screen and ($xl-min) {
+          width: calc(66.666% - calc(var(--current) * 3));
+          max-width: calc(66.666% - calc(var(--current) * 3));
+        }
+      }
+      &-9 {
+        @media screen and ($xl-min) {
+          width: calc(75% - calc(var(--current) * 3));
+          max-width: calc(75% - calc(var(--current) * 3));
+        }
+      }
+      &-10 {
+        @media screen and ($xl-min) {
+          width:  calc(83.333% - calc(var(--current) * 3));
+          max-width:  calc(83.333% - calc(var(--current) * 3));
+        }
+      }
+      &-11 {
+        @media screen and ($xl-min) {
+          width: calc(91.666% - calc(var(--current) * 3));
+          max-width: calc(91.666% - calc(var(--current) * 3));
+        }
+      }
+      &-12 {
+        @media screen and ($xl-min) {
+          width: calc(100% - calc(var(--current) * 3));
+          max-width: calc(100% - calc(var(--current) * 3));
+        }
+      }
+    }
+
+    &.col-xxl {
+      &-1 {
+        @media screen and ($xxl-min) {
+          width: calc(8.333% - calc(var(--current) * 3));
+          max-width: calc(8.333% - calc(var(--current) * 3));
+        }
+      }
+      &-2 {
+        @media screen and ($xxl-min) {
+          width: calc(16.666% - calc(var(--current) * 3));
+          max-width: calc(16.666% - calc(var(--current) * 3));
+        }
+      }
+      &-3 {
+        @media screen and ($xxl-min) {
+          width: calc(25% - calc(var(--current) * 3));
+          max-width: calc(25% - calc(var(--current) * 3));
+        }
+      }
+      &-4 {
+        @media screen and ($xxl-min) {
+          width: calc(33.333% - calc(var(--current) * 3));
+          max-width: calc(33.333% - calc(var(--current) * 3));
+        }
+      }
+      &-5 {
+        @media screen and ($xxl-min) {
+          width: calc(41.666% - calc(var(--current) * 3));
+          max-width: calc(41.666% - calc(var(--current) * 3));
+        }
+      }
+      &-6 {
+        @media screen and ($xxl-min) {
+          width: calc(50% - calc(var(--current) * 3));
+          max-width: calc(50% - calc(var(--current) * 3));
+        }
+      }
+      &-7 {
+        @media screen and ($xxl-min) {
+          width: calc(58.333% - calc(var(--current) * 3));
+          max-width: calc(58.333% - calc(var(--current) * 3));
+        }
+      }
+      &-8 {
+        @media screen and ($xxl-min) {
+          width: calc(66.666% - calc(var(--current) * 3));
+          max-width: calc(66.666% - calc(var(--current) * 3));
+        }
+      }
+      &-9 {
+        @media screen and ($xxl-min) {
+          width: calc(75% - calc(var(--current) * 3));
+          max-width: calc(75% - calc(var(--current) * 3));
+        }
+      }
+      &-10 {
+        @media screen and ($xxl-min) {
+          width:  calc(83.333% - calc(var(--current) * 3));
+          max-width:  calc(83.333% - calc(var(--current) * 3));
+        }
+      }
+      &-11 {
+        @media screen and ($xxl-min) {
+          width: calc(91.666% - calc(var(--current) * 3));
+          max-width: calc(91.666% - calc(var(--current) * 3));
+        }
+      }
+      &-12 {
+        @media screen and ($xxl-min) {
+          width: calc(100% - calc(var(--current) * 3));
+          max-width: calc(100% - calc(var(--current) * 3));
+        }
+      }
+    }
+  }
+}
+
+.au-container-grid {
+  max-width: 1280px;
+}
+
+.au-container-grid,
+.au-container-grid-fluid {
+  position: relative;
+  display: grid;
+  width: 100%;
+  list-style: none;
+  padding: 0 calc(var(--current) * 2);
+  margin: 0 auto;
+  @media screen and ($xs-min) {
+    padding: 0 calc(var(--current) * 3);
+  }
+  @media screen and ($sm-min) {
+    padding: 0 calc(var(--current) * 4);
+  }
+  /*@media screen and ($xl-min) {
+    padding: 0 calc(var(--current) * 8);
+  }*/
+
+  &.au-container-grid-inside {
+    padding: 0;
+  }
+
+  &.col {
+    &-fr {
+      &-1 {
+        grid-template-columns: repeat(12, 1fr);
+      }
+      &-2 {
+        grid-template-columns: repeat(6, 1fr);
+      }
+      &-3 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      &-4 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      &-6 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      &-12 {
+        grid-template-columns: 1fr;
+      }
+    }
+   &-xxs {
+     &-fr {
+       &-1 {
+         grid-template-columns: repeat(12, 1fr);
+       }
+       &-2 {
+         grid-template-columns: repeat(6, 1fr);
+       }
+       &-3 {
+         grid-template-columns: repeat(4, 1fr);
+       }
+       &-4 {
+         grid-template-columns: repeat(3, 1fr);
+       }
+       &-6 {
+         grid-template-columns: repeat(2, 1fr);
+       }
+       &-12 {
+         grid-template-columns: 1fr;
+       }
+     }
+   }
+   &-xs {
+     &-fr {
+       &-1 {
+         @media screen and ($xs-min) {
+          grid-template-columns: repeat(12, 1fr);
+         }
+       }
+       &-2 {
+         @media screen and ($xs-min) {
+          grid-template-columns: repeat(6, 1fr);
+         }
+       }
+       &-3 {
+         @media screen and ($xs-min) {
+          grid-template-columns: repeat(4, 1fr);
+         }
+       }
+       &-4 {
+         @media screen and ($xs-min) {
+          grid-template-columns: repeat(3, 1fr);
+         }
+       }
+       &-6 {
+         @media screen and ($xs-min) {
+          grid-template-columns: repeat(2, 1fr);
+         }
+       }
+       &-12 {
+         @media screen and ($xs-min) {
+          grid-template-columns: 1fr;
+         }
+       }
+     }
+   }
+   &-sm {
+     &-fr {
+       &-1 {
+         @media screen and ($sm-min) {
+           grid-template-columns: repeat(12, 1fr);
+         }
+       }
+       &-2 {
+         @media screen and ($sm-min) {
+           grid-template-columns: repeat(6, 1fr);
+         }
+       }
+       &-3 {
+         @media screen and ($sm-min) {
+           grid-template-columns: repeat(4, 1fr);
+         }
+       }
+       &-4 {
+         @media screen and ($sm-min) {
+           grid-template-columns: repeat(3, 1fr);
+         }
+       }
+       &-6 {
+         @media screen and ($sm-min) {
+           grid-template-columns: repeat(2, 1fr);
+         }
+       }
+       &-12 {
+         @media screen and ($sm-min) {
+           grid-template-columns: 1fr;
+         }
+       }
+     }
+   }
+   &-md {
+     &-fr {
+       &-1 {
+         @media screen and ($md-min) {
+           grid-template-columns: repeat(12, 1fr);
+         }
+       }
+       &-2 {
+         @media screen and ($md-min) {
+           grid-template-columns: repeat(6, 1fr);
+         }
+       }
+       &-3 {
+         @media screen and ($md-min) {
+           grid-template-columns: repeat(4, 1fr);
+         }
+       }
+       &-4 {
+         @media screen and ($md-min) {
+           grid-template-columns: repeat(3, 1fr);
+         }
+       }
+       &-6 {
+         @media screen and ($md-min) {
+           grid-template-columns: repeat(2, 1fr);
+         }
+       }
+       &-12 {
+         @media screen and ($md-min) {
+           grid-template-columns: 1fr;
+         }
+       }
+     }
+   }
+   &-lg {
+     &-fr {
+       &-1 {
+         @media screen and ($lg-min) {
+           grid-template-columns: repeat(12, 1fr);
+         }
+       }
+       &-2 {
+         @media screen and ($lg-min) {
+           grid-template-columns: repeat(6, 1fr);
+         }
+       }
+       &-3 {
+         @media screen and ($lg-min) {
+           grid-template-columns: repeat(4, 1fr);
+         }
+       }
+       &-4 {
+         @media screen and ($lg-min) {
+           grid-template-columns: repeat(3, 1fr);
+         }
+       }
+       &-6 {
+         @media screen and ($lg-min) {
+           grid-template-columns: repeat(2, 1fr);
+         }
+       }
+       &-12 {
+         @media screen and ($lg-min) {
+           grid-template-columns: 1fr;
+         }
+       }
+     }
+   }
+   &-xl {
+     &-fr {
+       &-1 {
+         @media screen and ($xl-min) {
+           grid-template-columns: repeat(12, 1fr);
+         }
+       }
+       &-2 {
+         @media screen and ($xl-min) {
+           grid-template-columns: repeat(6, 1fr);
+         }
+       }
+       &-3 {
+         @media screen and ($xl-min) {
+           grid-template-columns: repeat(4, 1fr);
+         }
+       }
+       &-4 {
+         @media screen and ($xl-min) {
+           grid-template-columns: repeat(3, 1fr);
+         }
+       }
+       &-6 {
+         @media screen and ($xl-min) {
+           grid-template-columns: repeat(2, 1fr);
+         }
+       }
+       &-12 {
+         @media screen and ($xl-min) {
+           grid-template-columns: 1fr;
+         }
+       }
+     }
+   }
+   &-xxl {
+     &-fr {
+       &-1 {
+         @media screen and ($xxl-min) {
+           grid-template-columns: repeat(12, 1fr);
+         }
+       }
+       &-2 {
+         @media screen and ($xxl-min) {
+           grid-template-columns: repeat(6, 1fr);
+         }
+       }
+       &-3 {
+         @media screen and ($xxl-min) {
+           grid-template-columns: repeat(4, 1fr);
+         }
+       }
+       &-4 {
+         @media screen and ($xxl-min) {
+           grid-template-columns: repeat(3, 1fr);
+         }
+       }
+       &-6 {
+         @media screen and ($xxl-min) {
+           grid-template-columns: repeat(2, 1fr);
+         }
+       }
+       &-12 {
+         @media screen and ($xxl-min) {
+           grid-template-columns: 1fr;
+         }
+       }
+     }
+   }
+  }
+}
+
+$step: 4;
+$i: -$step;
+$l: -1;
+
+@while $l < 12 {
+  $i: $i + $step;
+  $l: $l + 1;
+  $value: #{$i}px;
+
+  .gap-#{$l} {
+    grid-gap: #{$value};
+  }
+
+  .gap-row-#{$l} {
+    grid-row-gap: #{$value};
+  }
+
+  .gap-col-#{$l} {
+    grid-column-gap: #{$value};
+  }
+
+  .gap-xxs-#{$l} {
+    grid-gap: #{$value};
+  }
+
+  .gap-row-xxs-#{$l} {
+    grid-row-gap: #{$value};
+  }
+
+  .gap-col-xxs-#{$l} {
+    grid-column-gap: #{$value};
+  }
+
+  .gap-xs-#{$l} {
+    @media screen and ($xs-min) {
+      grid-gap: #{$value};
+    }
+  }
+
+  .gap-row-xs-#{$l} {
+    @media screen and ($xs-min) {
+      grid-row-gap: #{$value};
+    }
+  }
+
+  .gap-col-xs-#{$l} {
+    @media screen and ($xs-min) {
+      grid-column-gap: #{$value};
+    }
+  }
+
+  .gap-sm-#{$l} {
+    @media screen and ($sm-min) {
+      grid-gap: #{$value};
+    }
+  }
+
+  .gap-row-sm-#{$l} {
+    @media screen and ($sm-min) {
+      grid-row-gap: #{$value};
+    }
+  }
+
+  .gap-col-sm-#{$l} {
+    @media screen and ($sm-min) {
+      grid-column-gap: #{$value};
+    }
+  }
+
+  .gap-md-#{$l} {
+    @media screen and ($md-min) {
+      grid-gap: #{$value};
+    }
+  }
+
+  .gap-row-md-#{$l} {
+    @media screen and ($md-min) {
+      grid-row-gap: #{$value};
+    }
+  }
+
+  .gap-col-md-#{$l} {
+    @media screen and ($md-min) {
+      grid-column-gap: #{$value};
+    }
+  }
+
+  .gap-lg-#{$l} {
+    @media screen and ($lg-min) {
+      grid-gap: #{$value};
+    }
+  }
+
+  .gap-row-lg-#{$l} {
+    @media screen and ($lg-min) {
+      grid-row-gap: #{$value};
+    }
+  }
+
+  .gap-col-lg-#{$l} {
+    @media screen and ($lg-min) {
+      grid-column-gap: #{$value};
+    }
+  }
+
+  .gap-xl-#{$l} {
+    @media screen and ($xl-min) {
+      grid-gap: #{$value};
+    }
+  }
+
+  .gap-row-xl-#{$l} {
+    @media screen and ($xl-min) {
+      grid-row-gap: #{$value};
+    }
+  }
+
+  .gap-col-xl-#{$l} {
+    @media screen and ($xl-min) {
+      grid-column-gap: #{$value};
+    }
+  }
+
+  .gap-xxl-#{$l} {
+    @media screen and ($xxl-min) {
+      grid-gap: #{$value};
+    }
+  }
+
+  .gap-row-xxl-#{$l} {
+    @media screen and ($xxl-min) {
+      grid-row-gap: #{$value};
+    }
+  }
+
+  .gap-col-xxl-#{$l} {
+    @media screen and ($xxl-min) {
+      grid-column-gap: #{$value};
+    }
+  }
+}

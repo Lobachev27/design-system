@@ -1,0 +1,55 @@
+@import "partials/variables";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(to right, var(--gray-0) 50%, var(--gray-50) 50%);
+  color: var(--text-color);
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  /*max-width: 1600px;
+  min-width: 900px;
+  padding: 50px 40px;*/
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 80px;
+  margin: 0 auto 72px;
+  width: 100%;
+}
+
+li {
+  line-height: 16px;
+  margin-bottom: 16px;
+}
+
+.g-col-gap-40 {
+  grid-column-gap: 40px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}

@@ -1,0 +1,254 @@
+<head>
+  <title>Image Upload Drag and drop Single</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="title" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+<main>
+  <div class="au-container-grid my-16">
+    <h2>Image Upload Drag and drop Single</h2>
+    <div class="au-container-grid au-container-grid-inside col-fr-6 gap-xxs-4 gap-lg-6">
+      <div>
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-required",
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "",
+            loading: "",
+            loadingSize: "",
+            message: "",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-disabled",
+            disabled: true,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "",
+            loading: "",
+            loadingSize: "",
+            message: "",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-readonly",
+            disabled: false,
+            readonly: true,
+            info: false,
+            label: "Изображение",
+            value: "../../img/photo-1.jpeg",
+            loading: "",
+            loadingSize: "",
+            message: '<a href="javascript:void(0);" download>Скачать</a> 700 кб',
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-active",
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "",
+            loading: "59",
+            loadingSize: "700 кб",
+            message: "",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-success",
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "../../img/photo-1.jpeg",
+            loading: "",
+            loadingSize: "",
+            message: "Текст с успехом",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-warning",
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "",
+            loading: "",
+            loadingSize: "",
+            message: "Текст с предупреждением",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-error",
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "",
+            loading: "",
+            loadingSize: "",
+            message: "Текст с ошибкой",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "is-info",
+            disabled: false,
+            readonly: false,
+            info: true,
+            label: "Изображение",
+            value: "../../img/photo-1.jpeg",
+            loading: "",
+            loadingSize: "",
+            message: "Описание с подсказкой",
+          }
+        })
+      </div>
+      <div>
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "image-drag-and-drop-inverse is-required",
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "",
+            loading: "",
+            loadingSize: "",
+            message: "",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "image-drag-and-drop-inverse is-disabled",
+            disabled: true,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "",
+            loading: "",
+            loadingSize: "",
+            message: "",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "image-drag-and-drop-inverse is-readonly",
+            disabled: false,
+            readonly: true,
+            info: false,
+            label: "Изображение",
+            value: "../../img/photo-1.jpeg",
+            loading: "",
+            loadingSize: "",
+            message: '<a href="javascript:void(0);" download>Скачать</a> 700 кб',
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "image-drag-and-drop-inverse is-active",
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "",
+            loading: "59",
+            loadingSize: "700 кб",
+            message: "",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "image-drag-and-drop-inverse is-success",
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "../../img/photo-1.jpeg",
+            loading: "",
+            loadingSize: "",
+            message: "Текст с успехом",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "image-drag-and-drop-inverse is-warning",
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "",
+            loading: "",
+            loadingSize: "",
+            message: "Текст с предупреждением",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "image-drag-and-drop-inverse is-error",
+            disabled: false,
+            readonly: false,
+            info: false,
+            label: "Изображение",
+            value: "",
+            loading: "",
+            loadingSize: "",
+            message: "Текст с ошибкой",
+          }
+        })
+
+        @@include("./template/_template.html", {
+          context: {
+            classesList: "image-drag-and-drop-inverse is-info",
+            disabled: false,
+            readonly: false,
+            info: true,
+            label: "Изображение",
+            value: "../../img/photo-1.jpeg",
+            loading: "",
+            loadingSize: "",
+            message: "Описание с подсказкой",
+          }
+        })
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./index.js"></script>
+</body>

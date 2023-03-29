@@ -1,0 +1,69 @@
+@import "partials/variables";
+
+// Система отступов
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+$step: 4;
+$i: -$step;
+$l: -1;
+
+@while $l < 20 {
+  $i: $i + $step;
+  $l: $l + 1;
+  $value: #{$i}px;
+
+  // Margin
+  .ml-#{$l} {
+    margin-left: #{$value} !important;
+  }
+  .mr-#{$l} {
+    margin-right: #{$value} !important;
+  }
+  .mt-#{$l} {
+    margin-top: #{$value} !important;
+  }
+  .mb-#{$l} {
+    margin-bottom: #{$value} !important;
+  }
+  .mx-#{$l} {
+    margin-left: #{$value} !important;
+    margin-right: #{$value} !important;
+  }
+  .my-#{$l} {
+    margin-top: #{$value} !important;
+    margin-bottom: #{$value} !important;
+  }
+
+  // Padding
+  .pl-#{$l} {
+    padding-left: #{$value} !important;
+  }
+  .pr-#{$l} {
+    padding-right: #{$value} !important;
+  }
+  .pt-#{$l} {
+    padding-top: #{$value} !important;
+  }
+  .pb-#{$l} {
+    padding-bottom: #{$value} !important;
+  }
+  .px-#{$l} {
+    padding-left: #{$value} !important;
+    padding-right: #{$value} !important;
+  }
+  .py-#{$l} {
+    padding-top: #{$value} !important;
+    padding-bottom: #{$value} !important;
+  }
+}

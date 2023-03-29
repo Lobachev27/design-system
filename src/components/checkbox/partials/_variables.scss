@@ -1,0 +1,28 @@
+//root variables
+:root {
+  //Checkbox colors:
+  --checkbox-text-color: var(--gray-700);
+  --checkbox-text-disabled: var(--gray-400);
+  --checkbox-text-readonly: var(--gray-400);
+  --checkbox-text-hover: var(--gray-1000);
+  --checkbox-text-active: var(--primary-color);
+
+  --checkbox-background-color: var(--gray-100);
+  --checkbox-background-color-inverse: var(--gray-0);
+  --checkbox-background-color-disabled: var(--gray-100);
+  --checkbox-background-color-readonly: var(--gray-50);
+  --checkbox-background-color-hover: var(--gray-200);
+  --checkbox-background-color-checked: var(--primary-color);
+
+  --checkbox-border-color: var(--gray-200);
+  --checkbox-border-color-readonly: var(--gray-100);
+  --checkbox-border-color-hover: var(--gray-400);
+}
+
+//Sizes:
+$checkbox-width: 16px;
+$checkbox-height: 16px;
+$checkbox-border-radius: 2px;
+
+//Font:
+$checkbox-font-family: 'Rubik', sans-serif;

@@ -1,0 +1,12 @@
+@import "partials/variables";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Ruda', sans-serif;
+  font-weight: 800;
+  color: var(title-text-color);
+}
